@@ -1,0 +1,41 @@
+{
+  "status": "pilot protocol fixed before validation and test forecasts",
+  "source_url": "https://stat.gov.kz/api/iblock/element/38031/file/en/",
+  "source_index": "https://stat.gov.kz/en/industries/economy/local-market/dynamic-tables/",
+  "retrieved_date": "2026-10-24",
+  "raw_sha256": "868c064be290fd7a36cd0a4594feb3984966c5bc088d67c2c856e6667133f823",
+  "train": ["2015-01-01", "2022-12-01"],
+  "validation": ["2023-01-01", "2024-12-01"],
+  "test": ["2025-01-01", "2025-12-01"],
+  "robustness": ["2026-01-01", "2026-08-01"],
+  "forecast_horizon_months": 1,
+  "expanding_refit": true,
+  "selection_metric": "validation WAPE",
+  "lag_features": [1, 3, 12],
+  "full_features": ["lag1", "lag3", "lag12", "month", "mean3", "mean12"],
+  "ets_grid": [
+    {"seasonal": "add", "damped_trend": false},
+    {"seasonal": "add", "damped_trend": true},
+    {"seasonal": "mul", "damped_trend": false},
+    {"seasonal": "mul", "damped_trend": true}
+  ],
+  "arima_orders": [[0, 1, 0], [1, 1, 0], [0, 1, 1], [1, 1, 1], [2, 1, 0]],
+  "arima_trend": "t",
+  "lgbm_grid": {
+    "num_leaves": [7, 15],
+    "learning_rate": [0.03, 0.1],
+    "n_estimators": [100, 300],
+    "min_child_samples": [10, 20]
+  },
+  "model_seed": 42,
+  "num_threads": 2,
+  "bootstrap_seed": 2026,
+  "bootstrap_resamples": 10000,
+  "bootstrap_block_months": 3,
+  "bootstrap_block_sensitivity": [2, 4],
+  "statistical_test": "exploratory two-sided exact block sign randomization of paired absolute-loss differences in four non-overlapping three-month blocks",
+  "alpha": 0.05,
+  "practical_rq1": {"relative_wape_reduction_percent": 5, "max_rmse_ratio": 1, "monthly_wins": 8},
+  "practical_rq2": {"wape_lower_than_lag_only": true, "monthly_wins": 8},
+  "scope": "national nominal monthly turnover pilot, not store SKU evaluation or Big Data scalability"
+}
