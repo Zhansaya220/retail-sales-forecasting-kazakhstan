@@ -1,0 +1,40 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "cpu": "Apple M2 Pro",
+  "physical_cpu_cores": "12",
+  "ram_bytes": "17179869184",
+  "model_threads": 2,
+  "model_seed": 42,
+  "bootstrap_seed": 2026,
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "lightgbm": "4.7.0",
+    "matplotlib": "3.11.2",
+    "xlrd": "2.0.2"
+  },
+  "validation_seconds": 30.768545750000158,
+  "evaluation_seconds": 7.917010291999986,
+  "model_fit_times_seconds": {
+    "validation Seasonal naive": 0.00015987500000846921,
+    "validation ETS": 1.0484515420000662,
+    "validation ARIMA": 0.22698358399998142,
+    "validation LightGBM lag": 1.3644460830000753,
+    "validation LightGBM full": 1.5262246669999513,
+    "test Seasonal naive": 0.0001149159998021787,
+    "test ETS": 0.5446548750001057,
+    "test ARIMA": 0.1688920000001417,
+    "test LightGBM lag": 0.7440965409998626,
+    "test LightGBM full": 0.7450223340001685,
+    "robustness Seasonal naive": 8.795799999461451e-05,
+    "robustness ETS": 0.37231291700004476,
+    "robustness ARIMA": 0.07463366599995425,
+    "robustness LightGBM lag": 0.4975651250001647,
+    "robustness LightGBM full": 0.5156325830000696
+  },
+  "code_sha256": "a71471e9bae578bd85d4ea81f9ada1dce1a3295525ef6b9e271cf465942f733d"
+}

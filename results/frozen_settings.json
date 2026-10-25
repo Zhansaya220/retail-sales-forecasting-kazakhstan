@@ -1,0 +1,47 @@
+{
+  "protocol_sha256": "25eadc068ac1ba4f4d811c8aa9940d50b30d109bb1369a7dba14c03e2f47f33c",
+  "models": {
+    "Seasonal naive": {
+      "parameters": {},
+      "validation_WAPE": 16.031049578356736
+    },
+    "ETS": {
+      "parameters": {
+        "seasonal": "mul",
+        "damped_trend": true
+      },
+      "validation_WAPE": 3.634582022450542
+    },
+    "ARIMA": {
+      "parameters": {
+        "order": [
+          0,
+          1,
+          0
+        ]
+      },
+      "validation_WAPE": 15.827170628634352
+    },
+    "LightGBM lag": {
+      "parameters": {
+        "num_leaves": 7,
+        "learning_rate": 0.1,
+        "n_estimators": 300,
+        "min_child_samples": 10
+      },
+      "validation_WAPE": 10.869039291554774
+    },
+    "LightGBM full": {
+      "parameters": {
+        "num_leaves": 7,
+        "learning_rate": 0.1,
+        "n_estimators": 300,
+        "min_child_samples": 10
+      },
+      "validation_WAPE": 10.64313965361178
+    }
+  },
+  "selected_baseline": "ETS",
+  "rmsse_denominator": 21190831262.821075,
+  "validation_seconds": 30.768545750000158
+}

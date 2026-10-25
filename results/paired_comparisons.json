@@ -1,0 +1,54 @@
+[
+  {
+    "candidate": "LightGBM full",
+    "comparator": "ETS",
+    "mean_absolute_loss_difference": 177075.66223774842,
+    "p_two_sided": 0.125,
+    "quarter_block_differences": [
+      13468.083312084744,
+      221131.3634762813,
+      212430.83278776208,
+      261272.36937486552
+    ],
+    "monthly_wins": 2,
+    "relative_WAPE_reduction_percent": -270.5471181066754,
+    "difference_CI_block2": [
+      4.1772088690380595,
+      11.372681109763237
+    ],
+    "difference_CI_block3": [
+      4.890520072378793,
+      10.9868970130268
+    ],
+    "difference_CI_block4": [
+      5.063006177914179,
+      11.099976410235447
+    ]
+  },
+  {
+    "candidate": "LightGBM full",
+    "comparator": "LightGBM lag",
+    "mean_absolute_loss_difference": 31482.952874932944,
+    "p_two_sided": 0.75,
+    "quarter_block_differences": [
+      -56161.74706106974,
+      145516.00746345296,
+      51437.001347957565,
+      -14859.450250609001
+    ],
+    "monthly_wins": 6,
+    "relative_WAPE_reduction_percent": -14.917743935721074,
+    "difference_CI_block2": [
+      -1.3731979832832408,
+      4.603694808153889
+    ],
+    "difference_CI_block3": [
+      -1.518019150645224,
+      4.760014735472393
+    ],
+    "difference_CI_block4": [
+      -1.690098427367655,
+      4.733136876718894
+    ]
+  }
+]

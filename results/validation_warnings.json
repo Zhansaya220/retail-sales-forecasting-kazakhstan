@@ -1,0 +1,20 @@
+[
+  {
+    "family": "ARIMA",
+    "date": "2023-02-01 00:00:00",
+    "type": "ConvergenceWarning",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  },
+  {
+    "family": "ARIMA",
+    "date": "2023-05-01 00:00:00",
+    "type": "ConvergenceWarning",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  },
+  {
+    "family": "ARIMA",
+    "date": "2023-10-01 00:00:00",
+    "type": "ConvergenceWarning",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  }
+]

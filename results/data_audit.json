@@ -1,0 +1,70 @@
+{
+  "source_url": "https://stat.gov.kz/api/iblock/element/38031/file/en/",
+  "raw_sha256": "868c064be290fd7a36cd0a4594feb3984966c5bc088d67c2c856e6667133f823",
+  "raw_grid_cells": 144,
+  "numeric_cells": 140,
+  "unavailable_cells": [
+    "2026-09-01",
+    "2026-10-01",
+    "2026-11-01",
+    "2026-12-01"
+  ],
+  "converted_text_values": [
+    {
+      "date": "2016-10-01",
+      "original": "667\u00a0058,8"
+    }
+  ],
+  "primary_records": 132,
+  "duplicates_removed": 0,
+  "missing_primary": 0,
+  "outliers_removed": 0,
+  "primary_excluded_2026_observations": 8,
+  "lag_warmup_months": 12,
+  "train_raw_months": 96,
+  "train_supervised_rows": 84,
+  "validation_months": 24,
+  "test_months": 12,
+  "source_unit_conflict": "Metadata says percentage; Indicator explicitly says mln.tenge.",
+  "source_vintage": "Revised workbook retrieved 24 October 2026, not archived real-time releases.",
+  "target_description": {
+    "count": 132.0,
+    "mean": 1159581.2234848484,
+    "std": 605414.836840516,
+    "min": 410928.2,
+    "25%": 726675.05,
+    "50%": 982342.7,
+    "75%": 1440089.6,
+    "max": 3530327.7
+  },
+  "train_description": {
+    "count": 96.0,
+    "mean": 885344.25,
+    "std": 323323.8915587851,
+    "min": 410928.2,
+    "25%": 661056.125,
+    "50%": 814408.3,
+    "75%": 1053314.025,
+    "max": 2073940.1
+  },
+  "validation_description": {
+    "count": 24.0,
+    "mean": 1736653.2125000001,
+    "std": 477490.1216917015,
+    "min": 1059100.7,
+    "25%": 1346083.725,
+    "50%": 1713247.65,
+    "75%": 1994022.475,
+    "max": 2959415.1
+  },
+  "test_description": {
+    "count": 12.0,
+    "mean": 2199333.033333333,
+    "std": 650518.704075247,
+    "min": 1316827.2,
+    "25%": 1667690.5,
+    "50%": 2228451.05,
+    "75%": 2607727.175,
+    "max": 3530327.7
+  }
+}
